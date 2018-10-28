@@ -1,6 +1,6 @@
 module.exports = {
 	runtimeCompiler: true,
-	baseUrl: "./",
+	baseUrl: "wtm-map/",
 
 	pluginOptions: {
 		i18n: {

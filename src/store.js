@@ -5,12 +5,12 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
 	state: {
-		center: { lat: 51.505, lng: -0.09 },
-		zoom: 12,
+		center: { lat: 46.62633484121507, lng: 3.137454986572266 },
+		zoom: 5,
 		markers: [
 			{
 				id: "m1",
-				position: { lat: 51.505, lng: -0.09 },
+				position: { lat: 33.906895, lng: 11.865234 },
 				tooltip: "tooltip for marker1",
 				draggable: true,
 				visible: true

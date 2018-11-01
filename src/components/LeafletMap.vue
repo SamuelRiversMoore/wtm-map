@@ -111,7 +111,7 @@ export default {
 		};
 	},
 	props: {
-		//bounds: L.latLngBounds({ lat: 51.476483373501964, lng: -0.14668464136775586 }, { lat: 51.52948330894063, lng: -0.019140238291583955 }),
+		bounds: L.latLngBounds({ lat: 46, lng: -8 }, { lat: 28, lng: 37 }),
 		markers: {
 			type: Array,
 			default() {

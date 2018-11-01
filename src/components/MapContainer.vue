@@ -31,6 +31,9 @@ export default {
 				this.$store.dispatch("setMarkers", value);
 			}
 		}
+	},
+	mounted() {
+		this.$store.dispatch("setCenter", { lat: 37.5, lng: 14.5 });
 	}
 };
 </script>

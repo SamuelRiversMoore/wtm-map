@@ -13,15 +13,12 @@ export default new Vuex.Store({
 				position: { lat: 51.505, lng: -0.09 },
 				tooltip: "tooltip for marker1",
 				draggable: true,
-				visible: true,
-				icon: L.icon.glyph({
-					prefix: "",
-					glyph: "A"
-				})
-			},
-			{ id: "m2", position: { lat: 51.8905, lng: -0.09 }, tooltip: "tooltip for marker2", draggable: true, visible: false },
-			{ id: "m3", position: { lat: 51.005, lng: -0.09 }, tooltip: "tooltip for marker3", draggable: true, visible: true },
-			{ id: "m4", position: { lat: 50.7605, lng: -0.09 }, tooltip: "tooltip for marker4", draggable: true, visible: false }
+				visible: true
+				// icon: L.icon.glyph({
+				// 	prefix: "",
+				// 	glyph: "A"
+				// })
+			}
 		]
 	},
 	getters: {

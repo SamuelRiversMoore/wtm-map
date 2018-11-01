@@ -1,13 +1,15 @@
 module.exports = {
-	runtimeCompiler: true,
-	baseUrl: "wtm-map/",
+    runtimeCompiler: true,
+    baseUrl: "wtm-map/",
 
-	pluginOptions: {
+    pluginOptions: {
 		i18n: {
 			locale: "en",
 			fallbackLocale: "en",
 			localeDir: "locales",
 			enableInSFC: false
 		}
-	}
+	},
+
+    lintOnSave: false
 };

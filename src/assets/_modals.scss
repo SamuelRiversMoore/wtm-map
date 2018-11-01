@@ -1,0 +1,20 @@
+.dialog-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+.dialog-content {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 1.2em;
+}

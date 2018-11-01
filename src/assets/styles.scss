@@ -1,0 +1,66 @@
+$fa-font-path: "~fork-awesome/fonts";
+@import "~fork-awesome/scss/fork-awesome.scss";
+
+@import "~chota/dist/chota.css";
+
+// @import "_reset";
+@import "_modals";
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    //-webkit-font-smoothing: antialiased;
+    //-moz-osx-font-smoothing: grayscale;
+    color: #333;
+}
+
+:root {
+    --color-primary: #1a9f60;
+    --color-lightGrey: #d2d6dd;
+    --color-grey: #7e818b;
+    --color-darkGrey: #3f4144;
+    --color-error: #d43939;
+    --color-success: #28bd14;
+    --grid-maxWidth: 120rem;
+    --grid-gutter: 2rem;
+    --font-family: "Helvetica Neue", sans-serif;
+}
+
+.block:not(:last-child) {
+    margin-bottom: 1.2em;
+}
+
+.button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+    padding: 0.75em 1.5em;
+    &.large {
+        padding: 1em 2em;
+    }
+    + button {
+        margin-left: 1.2em;
+    }
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+select,
+textarea,
+textarea[type="text"] {
+    padding: 0.625em;
+}
+
+label {
+    margin-bottom: 0.2em;
+    display: block;
+    opacity: 0.8;
+}
+.text {
+    &.error {
+        color: var(--color-error);
+    }
+}
+input + .text {
+    margin-top: 0.2em;
+    display: block;
+}

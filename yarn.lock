@@ -735,6 +735,18 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.2.tgz#54c5a964462be3d4d78af631363c18d6fa91ac26"
   integrity sha512-yprFYuno9FtNsSHVlSWd+nRlmGoAbqbeCwOryP6sC/zoCjhpArcRMYp19EvpSUSizJAlsXEwJv+wcWS9XaXdMw==
 
+"@types/geojson@*":
+  version "7946.0.4"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.4.tgz#4e049756383c3f055dd8f3d24e63fb543e98eb07"
+  integrity sha512-MHmwBtCb7OCv1DSivz2UNJXPGU/1btAWRKlqJ2saEhVJkpkvqHMMaOpKg0v4sAbDWSQekHGvPVMM8nQ+Jen03Q==
+
+"@types/leaflet@^1.2.11":
+  version "1.2.11"
+  resolved "https://registry.yarnpkg.com/@types/leaflet/-/leaflet-1.2.11.tgz#a80f6d49a200698a24351e93dae654308cacf239"
+  integrity sha512-mFr7FkRvxtf9KvensAlss/o78CJ5UumvckwM+0xqF9jxgbMh0gVZq57kUe6jTqybQEavFgqIlSXzTnx3CRG/QQ==
+  dependencies:
+    "@types/geojson" "*"
+
 "@vue/babel-preset-app@^3.0.5":
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/@vue/babel-preset-app/-/babel-preset-app-3.0.5.tgz#7aa4a6a592ddf04a06a3cf2091252395acf4c033"
@@ -1063,6 +1075,11 @@ acorn@^5.0.0, acorn@^5.3.0, acorn@^5.5.0, acorn@^5.6.2, acorn@^5.7.1:
   version "5.7.3"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
   integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
+
+add@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
+  integrity sha1-JI8Kn25aUo7yKV2+7DBTITCuIjU=
 
 address@^1.0.3:
   version "1.0.3"
@@ -1839,6 +1856,11 @@ chokidar@^2.0.0, chokidar@^2.0.2:
   optionalDependencies:
     fsevents "^1.2.2"
 
+chota@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/chota/-/chota-0.5.1.tgz#705f163d90543673e53787a37df663f1bbc6d4ef"
+  integrity sha512-6VOkEgFzpRQ8gaHoXGTR2Q0qzER0eUGDXQpS2wa2VwYZkrgQdBCHtk+0lFrKwq8VGAsQISz9moZSJT0LIu6BDQ==
+
 chownr@^1.0.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.1.tgz#54726b8b8fff4df053c42187e801fb4412df1494"
@@ -2129,6 +2151,11 @@ cookie@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
   integrity sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
+
+coordinate-parser@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/coordinate-parser/-/coordinate-parser-1.0.2.tgz#0c097106db1beb878142fa2794a6cdf21e968ac1"
+  integrity sha1-DAlxBtsb64eBQvonlKbN8h6WisE=
 
 copy-concurrently@^1.0.0:
   version "1.0.5"
@@ -3441,6 +3468,11 @@ forever-agent@~0.6.1:
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
   integrity sha1-+8cfDEGt6zf5bFd60e1C2P2sypE=
 
+fork-awesome@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/fork-awesome/-/fork-awesome-1.1.5.tgz#09370221ad752a5396beb62bcb7bd11dab09a132"
+  integrity sha512-AcyPBje/cBkNjLAqxs301XjWSTLcXyktXjo0zhyrXDiEbTFi48HqBYbcPL0QBdtRHXrEdj+1rR5KublMQDwPwQ==
+
 form-data@~2.3.2:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.3.3.tgz#dcce52c05f644f298c6a7ab936bd724ceffbf3a6"
@@ -4679,6 +4711,11 @@ leaflet-draw@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/leaflet-draw/-/leaflet-draw-1.0.4.tgz#45be92f378ed253e7202fdeda1fcc71885198d46"
   integrity sha512-rsQ6saQO5ST5Aj6XRFylr5zvarWgzWnrg46zQ1MEOEIHsppdC/8hnN8qMoFvACsPvTioAuysya/TVtog15tyAQ==
+
+leaflet.icon.glyph@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/leaflet.icon.glyph/-/leaflet.icon.glyph-0.2.0.tgz#aadf17d4399819973aae2124b321676d8c5d33d9"
+  integrity sha1-qt8X1DmYGZc6riEksyFnbYxdM9k=
 
 leaflet@1.0.2:
   version "1.0.2"
@@ -7909,6 +7946,11 @@ vue-loader@^15.4.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-modal-dialogs@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/vue-modal-dialogs/-/vue-modal-dialogs-3.0.0.tgz#df92dc2d8d3b3104ed54d5f814f6881b87d58eb8"
+  integrity sha512-52x3DR3mfDLV0yubhoyiXuljRVNpu5EjHAWoKXPIqpVNx3E8DEs4mbXmDYP6xPIlIYfFiYN2aAlEhoMgXkjrBg==
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
@@ -7930,7 +7972,16 @@ vue-template-es2015-compiler@^1.6.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
   integrity sha512-x3LV3wdmmERhVCYy3quqA57NJW7F3i6faas++pJQWtknWT+n7k30F4TVdHvCLn48peTJFRvCpxs3UuFPqgeELg==
 
-vue@^2.5.16, vue@^2.5.17:
+vue2-leaflet@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vue2-leaflet/-/vue2-leaflet-1.1.1.tgz#a812985f2acdd76b3217558fad1224a9edfc1861"
+  integrity sha512-WyBsIUmRX/fd+MFaJ1OaAawLuxypY91DIbxlKTg9yc4rMx8O1z+lwm6l6/jT55xRLdTgIhwZta2bxSKzKgNGlw==
+  dependencies:
+    "@types/leaflet" "^1.2.11"
+    leaflet "^1.3.4"
+    vue "^2.5.3"
+
+vue@^2.5.16, vue@^2.5.17, vue@^2.5.3:
   version "2.5.17"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
   integrity sha512-mFbcWoDIJi0w0Za4emyLiW72Jae0yjANHbCVquMKijcavBGypqlF7zHRgMa5k4sesdv7hv2rB4JPdZfR+TPfhQ==
@@ -8243,6 +8294,11 @@ yargs@^7.0.0:
     which-module "^1.0.0"
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
+
+yarn@^1.12.1:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.12.1.tgz#afa478c9234ee55e8f4cdcfb994acfa54b69c95b"
+  integrity sha512-vdVLrYWx73k4QR8ZpQQ3HJg/X8aAunjUHuPlADR/ogmZOhnqgAdETPz0e/Df+MW8Dno7F1dOxS5e3G6niobumw==
 
 yorkie@^2.0.0:
   version "2.0.0"

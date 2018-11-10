@@ -28,12 +28,9 @@ export default {
 				return this.$store.state.markers;
 			},
 			set(value) {
-				this.$store.dispatch("setMarkers", value);
+				this.$store.commit("set_markers", value);
 			}
 		}
-	},
-	mounted() {
-		this.$store.dispatch("setCenter", { lat: 37.5, lng: 14.5 });
 	}
 };
 </script>

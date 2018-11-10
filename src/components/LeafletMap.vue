@@ -128,7 +128,7 @@ export default {
 				return this.$store.state.center;
 			},
 			set(value) {
-				if (value.toString() !== this.$store.state.center.toString()) this.$store.dispatch("setCenter", value);
+				if (value.toString() !== this.$store.state.center.toString()) this.$store.commit("set_center", value);
 			}
 		},
 		zoom: {
@@ -136,7 +136,7 @@ export default {
 				return this.$store.state.zoom;
 			},
 			set(value) {
-				if (value !== this.$store.state.zoom) this.$store.dispatch("setZoom", value);
+				if (value !== this.$store.state.zoom) this.$store.commit("set_zoom", value);
 			}
 		}
 	},

@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
 	state: {
-		center: { lat: 46.62633484121507, lng: 3.137454986572266 },
+		center: { lat: 37.5, lng: 14.5 },
 		zoom: 5,
 		markers: [
 			{
@@ -27,9 +27,6 @@ export default new Vuex.Store({
 		}
 	},
 	actions: {
-		setMarkers({ commit, state }, payload) {
-			commit("set_markers", payload);
-		},
 		addMarker({ commit, state }, marker) {
 			let markers = state.markers;
 			markers.push(marker);
@@ -43,12 +40,6 @@ export default new Vuex.Store({
 		updateMarker({ commit, state }, { marker, index }) {
 			state.markers[index] = marker;
 			//commit("set_markers", markers);
-		},
-		setCenter({ commit, state }, payload) {
-			commit("set_center", payload);
-		},
-		setZoom({ commit, state }, payload) {
-			commit("set_zoom", payload);
 		}
 	},
 	mutations: {

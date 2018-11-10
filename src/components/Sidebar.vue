@@ -50,7 +50,7 @@ export default {
 				markerModal(marker).then(result => {
 					if (result) {
 						this.$store.dispatch("addMarker", result);
-						this.$store.dispatch("setCenter", result.position);
+						this.$store.commit("set_center", result.position);
 					}
 				});
 			});

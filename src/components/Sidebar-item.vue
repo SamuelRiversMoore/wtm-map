@@ -1,20 +1,20 @@
 <template>
 	<div class="item">
 		<div class="row">
-			<strong class="col-1">{{ index + 1 }}.</strong>
+			<strong class="col-1"><span>{{ index + 1 }}.</span></strong>
 			<span class="col position">
-				{{position}}
-			</span>			
+				<i class="fa fa-map-marker"></i> {{position}}
+			</span>	
 		</div>
 
 		<div class="row">
 			<span class="col-1"></span>
 			<div class="col">
-				<span class="discret">{{item.tooltip}}</span>
+				<i class="fa fa-info"></i> <span class="discret"> {{item.tooltip}}</span>
 			</div>
 			<div class="col item-controls">
-				<button class="button" @click="$emit('edit')">Edit</button>
-				<button class="button" @click="removeMarker(index)">X</button>
+				<button class="button" @click="$emit('edit')"><i class="fa fa-pencil"></i></button>
+				<button class="button" @click="removeMarker(index)"><i class="fa fa-trash"></i></button>
 			</div>
 		</div>
 

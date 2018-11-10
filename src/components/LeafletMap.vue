@@ -9,7 +9,7 @@
 			:max-zoom="maxZoom"
 			@update:center="center = $event">
 
-			<l-control-layers :position="layersPosition" :collapsed="false" :sortLayers="true" />
+			<l-control-layers position="topright" :collapsed="false" :sortLayers="true" />
 
 			<l-tile-layer v-for="tileProvider in tileProviders" :key="tileProvider.name" :name="tileProvider.name" :visible="tileProvider.visible" :url="tileProvider.url" :attribution="tileProvider.attribution" :token="token" layer-type="base"/>
 
@@ -17,7 +17,7 @@
 
 			<l-control-attribution :position="attributionPosition" :prefix="attributionPrefix" />
 
-			<l-control-scale :imperial="imperial" />
+			<l-control-scale :imperial="imperial" position="bottomleft"/>
 
 			<l-marker
 				v-for="marker, index in markers"
@@ -103,7 +103,6 @@ export default {
 			maxZoom: 20,
 			zoomPosition: "topleft",
 			attributionPosition: "bottomright",
-			layersPosition: "topright",
 			attributionPrefix: "Vue2Leaflet",
 			imperial: false,
 			Positions: ["topleft", "topright", "bottomleft", "bottomright"],

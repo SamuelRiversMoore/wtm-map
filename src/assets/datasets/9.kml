@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Malta_SAR">
+<name>Malta_SAR</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Document id="SAR Zones Lybia (NO INFO IN IMO REPORT)">
+<name>SAR Zones Lybia (NO INFO IN IMO REPORT)</name>
+<open>1</open>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zones Lybia (NO INFO IN IMO REPORT)</name>
+<open>1</open>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+11.526082,33.171136,0 11.531247,33.196851,0 11.537371,33.213983,0 11.566443,33.298784,0 11.585108,33.364755,0 12,33.916667,0 12.218734,34.175,0 12.40997642454452,34.37477266876127,0 23.583333,34.333333,0 24.1667,34,0 25.150691,31.669654,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zones Lines">
+<name>SAR Zones Lines</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zones Lines</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+19,40.417,0 19,36.5,0 21.88,35.15,0 24.1667,34,0 27.1667,34,0 30,33.5,0 30,36.0833,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+25.929422,39.641178,0 25.927583,39.480612,0 25.930246,39.460019,0 25.981733,39.39618,0 26.431801,39.434207,0 26.505451,39.333626,0 26.586198,39.220564,0 26.674168,39.121822,0 26.704689,39.032056,0 26.699303,38.979992,0 26.646564,38.90973,0 26.618533,38.809115,0 26.45123,38.772686,0 26.323876,38.755905,0 26.303632,38.751889,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+26.303632,38.751889,0 26.266396,38.736237,0 26.242507,38.717446,0 26.229134,38.70051,0 26.222683,38.688221,0 26.218335,38.675376,0 26.21578,38.65155,0 26.223635,38.632801,0 26.250278,38.607077,0 26.2798,38.573704,0 26.312453,38.536792,0 26.320971,38.49846,0 26.315292,38.45303,0 26.242888,38.445932,0 26.213074,38.383465,0 26.223012,38.311061,0 26.194618,38.241496,0 26.221702,38.167533,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+25.928848,39.641112,0 25.928243,39.714352,0 25.910907,39.788522,0 25.892637,39.841675,0 25.888571,39.860458,0 25.889262,39.880357,0 25.891613,39.890548,0 25.757573,39.944193,0 25.738794,39.953309,0 25.732078,39.957485,0 25.725731,39.96199,0 25.714248,39.971907,0 25.709162,39.977277,0 25.70041,39.988726,0 25.698336,39.992046,0 25.633362,40.100846,0 25.6261,40.116093,0 25.622574,40.129096,0 25.62128999999999,40.14234,0 25.62226799999999,40.155599,0 25.625495,40.168647,0 25.630915,40.18126,0 25.638438,40.193222,0 25.647935,40.204327,0 25.659245,40.214386,0 25.672173,40.223225,0 25.679176,40.22714,0 25.693721,40.233723,0 26.049915,40.371418,0 25.906419,40.6972,0 25.90068,40.715783,0 25.899439,40.729024,0 25.899545,40.730976,0 26.05,40.7333,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+20,39.6667,0 19.920701,39.726198,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+19.820084,39.801691,0 19,40.417,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+20.010027,39.6912,0 20.005849,39.684767,0 20.002043,39.675319,0 20,39.6667,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+26.221702,38.167533,0 26.2833,37.9667,0 26.91874200000001,37.964784,0 27.05396199999999,37.913859,0 27.068188,37.886451,0 27.160492,37.790558,0 27.164929,37.724055,0 27.130201,37.700806,0 27.086704,37.69961,0 27.059248,37.69103,0 27.043804,37.667006,0 27.0541,37.564047,0 27.109012,37.457655,0 27.153628,37.311796,0 27.158776,37.262032,0 27.161711,37.165141,0 27.162986,37.060612,0 27.207602,36.96883,0 27.2178,36.945247,0 27.287273,36.938874,0 27.324878,36.921027,0 27.351648,36.918478,0 27.393715,36.905093,0 27.384791,36.856652,0 27.351011,36.807575,0 27.247119,36.725991,0 27.250234,36.70299,0 27.272614,36.67054,0 27.298109,36.633572,0 27.351479,36.5861,0 27.462142,36.542784,0 27.46865,36.542554,0 27.476887,36.542697,0 27.485094,36.543273,0 27.493238,36.544281,0 27.499736,36.545406,0 27.641671,36.574321,0 27.725616,36.644274,0 27.774831,36.69349,0 27.813952,36.708633,0 27.895498,36.697276,0 27.907993,36.640854,0 27.918693,36.592534,0 27.930917,36.537332,0 27.960677,36.470373,0 28.002098,36.469589,0 28.12543,36.525124,0 28.207326,36.562001,0 28.237771,36.567003,0 28.281938,36.574258,0 28.355672,36.573845,0 28.391168,36.567867,0 28.406089,36.565369,0 28.442383,36.56098,0 28.477595,36.527459,0 28.488699,36.516809,0 28.522018,36.484574,0 28.534911,36.472159,0 28.555511,36.436572,0 28.571637,36.403063,0 28.595777,36.328061,0 28.644155,36.244499,0 28.701329,36.182927,0 28.754104,36.125754,0 28.82887,36.055386,0 28.89484,36.028998,0 28.974004,36.0246,0 29.039974,36.020202,0 29.141128,36.020202,0 29.211496,36.028998,0 29.277466,36.042192,0 29.330242,36.055386,0 29.418201,36.138948,0 29.484171,36.187325,0 29.554539,36.187325,0 29.602917,36.160937,0 29.638101,36.125754,0 29.638101,36.06858,0 29.638101,36.028998,0 29.668887,35.993814,0 29.704071,35.993814,0 29.765643,35.993814,0 29.796429,35.993814,0 29.871195,36.015804,0 29.941563,36.050988,0 30,36.0833,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zones Line Egypt">
+<name>SAR Zones Line Egypt</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zones Line Egypt</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+25.150691,31.669654,0 24.1667,34,0 27.1667,34,0 30,33.5,0 33.9833,31.8333,0 34.5,31.6,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zones IMO-France-line">
+<name>SAR Zones IMO-France-line</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zones IMO-France-line</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+3.17,42.4367,0 4.6667,42,0 4.6667,39,0 7.733300000000001,39,0 7.733300000000001,41.3333,0 9.75,41.3333,0 9.75,43.1667,0 9.5,43.5,0 7.699999999999999,43.5,0 7.5383,43.7817,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zones IMO Line Spain">
+<name>SAR Zones IMO Line Spain</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zones IMO Line Spain</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+3.2,42.45,0 4.6667,42,0 4.6667,39,0 3.75,38.3333,0 -2.1,35.8333,0 -1.6167,37.3667,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-2.1,35.8333,0 -7.383300000000001,35.8333,0 -7.383300000000001,37.2167,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-13.1667,27.6667,0 -12.5,30,0 -15.1667,31.5833,0 -17.4167,31.65,0 -20,30,0 -25,30,0 -25,25,0 -19,19,0 -17.0667,20.7833,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zones IMO Italy">
+<name>SAR Zones IMO Italy</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zones IMO Italy</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+7.53,43.785,0 7.699999999999999,43.5,0 9.5,43.5,0 9.75,43.167,0 9.75,43.083,0 9.75,41.333,0 7.733300000000001,41.333,0 7.733300000000001,38.533,0 9.083299999999999,38.533,0 10.35,38,0 11.5,37.5,0 11.5,36.5,0 12.2333,35.25,0 12.6667,35.25,0 14.1333,36.5,0 16,36,0 19,36,0 19,40.417,0 18.325,41.383,0 18.15,41.5,0 18,41.57,0 16.5533,42.25,0 16.551242,42.242471,0 16.0233,42.518,0 15.725,42.675,0 15.5517,42.768,0 15.27,42.922,0 14.76,43.288,0 14.5,43.498,0 13.4683,44.302,0 13.2317,44.533,0 13.135,44.752,0 13,45.163,0 13.2117,45.45500000000001,0 13.3133,45.545,0 13.63,45.63,0 13.7133,45.598,0 13.7233,45.595,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zones IMO Italy">
+<name>SAR Zones IMO Italy</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zones IMO Italy</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+7.53,43.785,0 7.699999999999999,43.5,0 9.5,43.5,0 9.75,43.167,0 9.75,43.083,0 9.75,41.333,0 7.733300000000001,41.333,0 7.733300000000001,38.533,0 9.083299999999999,38.533,0 10.35,38,0 11.5,37.5,0 11.5,36.5,0 12.2333,35.25,0 12.6667,35.25,0 14.1333,36.5,0 16,36,0 19,36,0 19,40.417,0 18.325,41.383,0 18.15,41.5,0 18,41.57,0 16.5533,42.25,0 16.551242,42.242471,0 16.0233,42.518,0 15.725,42.675,0 15.5517,42.768,0 15.27,42.922,0 14.76,43.288,0 14.5,43.498,0 13.4683,44.302,0 13.2317,44.533,0 13.135,44.752,0 13,45.163,0 13.2117,45.45500000000001,0 13.3133,45.545,0 13.63,45.63,0 13.7133,45.598,0 13.7233,45.595,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zones - line-Morocco">
+<name>SAR Zones - line-Morocco</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zones - line-Morocco</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-2.22,35.09,0 -2.22,36,0 -5.2783,36,0 -5.2783,35.9,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-5.2783,35.9,0 -5.2783,36,0 -5.4383,35.9783,0 -5.6083,35.9317,0 -7.383300000000001,35.9667,0 -12,35.9667,0 -12.5667,35.2167,0 -9.0633,32.7167,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-9.0633,32.7167,0 -12.5667,35.2167,0 -14.6167,32.25,0 -15,31.8333,0 -11.5367,28.2917,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-11.5367,28.2917,0 -12.4,29.1833,0 -14.25,27.4,0 -16.6667,26,0 -18.1,26,0 -20.6583,20.6583,0 -17.0667,20.7917,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zone Line Turkey">
+<name>SAR Zone Line Turkey</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zone Line Turkey</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+35.92,35.93,0 33.94,35.12,0 32.28,35.12,0 28.5,35.05,0 25.63,37.3,0 25,38.609,0 24.75,38.83,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+28.03,41.98,0 28.32,41.98,0 29.57,42.44,0 32,43.35,0 33.62,43.2,0 34.22,43.19,0 35.51,43.44,0 36.18,43.43,0 36.85,43.18,0 38.54,42.42,0 39,42.34,0 40.43,42.03,0 40.69,41.95,0 41.28,41.6,0 41.55,41.52,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+24.75,38.8333,0 24.8489,39.5,0 24.981399,40.390858,0 25.973369,40.632802,0 26.05,40.71,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zone Line Portogal">
+<name>SAR Zone Line Portogal</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zone Line Portogal</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-17.4167,31.65,0 -25,30,0 -25,24,0 -37.5,17,0 -40,17,0 -40,45,0 -13,45,0 -8.833299999999999,44.9167,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-14.6167,32.25,0 -12,35.9667,0 -7.383300000000001,35.9667,0 -7.383300000000001,37.2167,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-7.861725,43.764288,0 -8.833299999999999,44.9167,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-17.4167,31.65,0 -17.133773,31.483315,0 -16.826291,31.36805,0 -16.503512,31.307674,0 -16.175156,31.304007,0 -15.851109,31.357157,0 -15.541129,31.465526,0 -15.25455,31.625849,0 -15,31.8333,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-14.6167,32.25,0 -15,31.8333,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zone Line Croatia">
+<name>SAR Zone Line Croatia</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zone Line Croatia</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+18.15,41.5,0 18,41.57,0 16.549894,42.23754,0 16.0233,42.518,0 15.27,42.922,0 14.5,43.498,0 13.2317,44.533,0 13,45.163,0 13.2117,45.45500000000001,0 13.7133,45.598,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+18.15,41.5,0 18.020445,41.62201,0 18.198561,41.826417,0 18.278657,41.919455,0 18.354013,42.039416,0 18.490497,42.253487,0 18.5464,42.354813,0 18.551896,42.388227,0 18.541604,42.404573,0 18.535828,42.423521,0 18.533987,42.434566,0 18.508054,42.453882,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Document id="SAR Zone Line Algeria">
+<name>SAR Zone Line Algeria</name>
+<Snippet maxLines="0"></Snippet>
+<StyleMap id="LineStyle00">
+<Pair>
+<key>normal</key>
+<styleUrl>#LineStyle000</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#LineStyle001</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="LineStyle001">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Style id="LineStyle000">
+<LabelStyle>
+<color>00000000</color>
+<scale>0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ff0000ff</color>
+<width>0.9</width>
+</LineStyle>
+</Style>
+<Folder id="FeatureLayer0">
+<name>SAR Zone Line Algeria</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+-2.1,35.8333,0 -1.5,36.25,0 3.75,38.3333,0 4.6667,39,0 7.733300000000001,39,0 7.733300000000001,38.533,0 8.166700000000001,38.5333,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+<Placemark>
+<name>0</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+8.166700000000001,38.5333,0 8.622026999999999,36.941364,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+<Folder id="FeatureLayer0">
+<name>Malta_SAR</name>
+<Snippet maxLines="0"></Snippet>
+<Placemark>
+<name>3065854.03679387</name>
+<Snippet maxLines="0"></Snippet>
+<styleUrl>#LineStyle00</styleUrl>
+<MultiGeometry>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+11.5,34.333333,0 23.583333,34.333333,0 19,36.5,0 11.5,36.5,0 11.5,34.333333,0
+</coordinates>
+</LineString>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+</kml>

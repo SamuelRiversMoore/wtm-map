@@ -159,9 +159,9 @@ export default {
 		// 	cache: "default"
 		// };
 
-		// fetch("http://watchthemed.net/json/layer/9", params).then(response => {
-		// 	console.log(response);
-		// });
+		fetch("http://watchthemed.net/json/layer/9", params).then(response => {
+			console.log(response);
+		});
 		console.log(datas);
 		omnivore.kml.parse(datas).addTo(this.$refs.map.mapObject);
 		console.log(this);

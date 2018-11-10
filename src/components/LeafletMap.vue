@@ -152,12 +152,12 @@ export default {
 		}
 	},
 	mounted() {
-		// var params = {
-		// 	method: "GET",
-		// 	headers: { "Content-Type": "application/x-www-form-urlencoded" },
-		// 	mode: "cors",
-		// 	cache: "default"
-		// };
+		var params = {
+			method: "GET",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			mode: "cors",
+			cache: "default"
+		};
 
 		fetch("http://watchthemed.net/json/layer/9", params).then(response => {
 			console.log(response);

@@ -9,6 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@mapbox/leaflet-omnivore": "^0.3.4",
     "add": "^2.0.6",
     "chota": "^0.5.1",
     "coordinate-parser": "^1.0.2",
@@ -19,6 +20,7 @@
     "leaflet.icon.glyph": "^0.2.0",
     "mapbox.js": "^3.1.1",
     "node-sass": "^4.9.4",
+    "raw-loader": "^0.5.1",
     "sass-loader": "^7.1.0",
     "vue": "^2.5.17",
     "vue-i18n": "^8.0.0",

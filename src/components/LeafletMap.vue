@@ -1,6 +1,7 @@
 <template>
 	<div class="leaflet-map">
 		<l-map
+			ref="map"
 			:zoom.sync="zoom"
 			:center="center"
 			:options="mapOptions"
@@ -81,6 +82,10 @@ const tileProviders = [
 	}
 ];
 
+import omnivore from "@mapbox/leaflet-omnivore";
+
+import datas from "!raw-loader!../assets/datasets/9.kml";
+
 export default {
 	name: "Map",
 	components: {
@@ -145,6 +150,21 @@ export default {
 			marker.position = event.latlng;
 			this.$store.dispatch("updateMarker", { marker, index });
 		}
+	},
+	mounted() {
+		// var params = {
+		// 	method: "GET",
+		// 	headers: { "Content-Type": "application/x-www-form-urlencoded" },
+		// 	mode: "cors",
+		// 	cache: "default"
+		// };
+
+		// fetch("http://watchthemed.net/json/layer/9", params).then(response => {
+		// 	console.log(response);
+		// });
+		console.log(datas);
+		omnivore.kml.parse(datas).addTo(this.$refs.map.mapObject);
+		console.log(this);
 	}
 };
 </script>

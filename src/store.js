@@ -19,7 +19,8 @@ export default new Vuex.Store({
 				// 	glyph: "A"
 				// })
 			}
-		]
+		],
+		records: []
 	},
 	getters: {
 		getCenterAsArray: state => {
@@ -27,22 +28,34 @@ export default new Vuex.Store({
 		}
 	},
 	actions: {
+		addRecord({ commit, state }, new_record) {
+			state.records.push(new_record);
+			commit("set_records", state.records);
+		},
 		addMarker({ commit, state }, marker) {
-			let markers = state.markers;
-			markers.push(marker);
-			commit("set_markers", markers);
+			state.markers.push(marker);
+			commit("set_markers", state.markers);
 		},
 		removeMarker({ commit, state }, index) {
-			let markers = state.markers;
-			markers.splice(index, 1);
-			commit("set_markers", markers);
+			state.markers.splice(index, 1);
+			commit("set_markers", state.markers);
 		},
 		updateMarker({ commit, state }, { marker, index }) {
 			state.markers[index] = marker;
-			//commit("set_markers", markers);
+			//commit("set_markers", state.markers);
 		}
 	},
 	mutations: {
+		init_store(state, dbName) {
+			if (localStorage.getItem(dbName)) {
+				if (localStorage.getItem(dbName)) {
+					this.replaceState(Object.assign(state, JSON.parse(localStorage.getItem(dbName))));
+				}
+			}
+		},
+		set_records(state, payload) {
+			state.records = payload;
+		},
 		set_markers(state, payload) {
 			state.markers = payload;
 		},

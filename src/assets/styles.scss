@@ -1,7 +1,7 @@
 $fa-font-path: "~fork-awesome/fonts";
 @import "~fork-awesome/scss/fork-awesome.scss";
 
-@import "~chota/dist/chota.css";
+//@import "~chota/dist/chota.css";
 
 // @import "_reset";
 @import "_modals";
@@ -11,18 +11,6 @@ body {
     //-webkit-font-smoothing: antialiased;
     //-moz-osx-font-smoothing: grayscale;
     color: #333;
-}
-
-:root {
-    --color-primary: #1a9f60;
-    --color-lightGrey: #d2d6dd;
-    --color-grey: #7e818b;
-    --color-darkGrey: #3f4144;
-    --color-error: #d43939;
-    --color-success: #28bd14;
-    --grid-maxWidth: 120rem;
-    --grid-gutter: 2rem;
-    --font-family: "Helvetica Neue", sans-serif;
 }
 
 .block:not(:last-child) {
@@ -50,11 +38,6 @@ textarea[type="text"] {
     padding: 0.625em;
 }
 
-label {
-    margin-bottom: 0.2em;
-    display: block;
-    opacity: 0.8;
-}
 .text {
     &.error {
         color: var(--color-error);
@@ -63,4 +46,27 @@ label {
 input + .text {
     margin-top: 0.2em;
     display: block;
+}
+.el-form--label-top .el-form-item__label {
+    line-height: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0;
+    &:not(:last-child) {
+        margin-bottom: 1.2em;
+    }
+}
+
+.row:not(:last-child) {
+    margin-bottom: 1.2em;
+}
+.align-right {
+    text-align: right;
 }

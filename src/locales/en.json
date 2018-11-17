@@ -1,3 +1,47 @@
 {
-  "message": "hello i18n !!"
+	"records": {
+		"title": "Open cases",
+		"add": "Open a new case"
+	},
+	"record": {
+		"header": "New case",
+		"title": "Title of the case"
+	},
+	"markers": {
+		"title": "List of points",
+		"add": "Add a point on the map"
+	},
+	"marker": {
+		"header": "Marker",
+		"coords": "Position",
+		"infos": "Informations"
+	},
+	"ui": {
+		"continue": "Continue",
+		"validate": "Validate",
+		"modify": "Modify",
+		"cancel": "Cancel",
+		"save": "Save",
+
+		"logout": "Logout",
+		"show_more": "Show more",
+		"yes": "Yes",
+		"no": "No",
+		"from": "from",
+		"from_the": "",
+		"to": "to",
+		"to_the": "–",
+		"the": "",
+		"at": "at",
+		"and": "and",
+		"or": "or",
+		"hide": "Hide",
+		"send": "Send",
+		"book": "Book",
+		"are_u_sure": "Are you sure ?",
+		"required": "required",
+		"browse_files": "Browse files",
+		"title": "title",
+		"status": "status"
+	}
 }

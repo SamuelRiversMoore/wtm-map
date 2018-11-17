@@ -1,3 +1,47 @@
 {
-  "message": "bonjour i18n !!"
+	"records": {
+		"title": "Cas ouverts",
+		"add": "Ouvrir un nouveau cas"
+	},
+	"record": {
+		"header": "Nouveau cas",
+		"title": "Intitulé du cas"
+	},
+	"markers": {
+		"title": "Liste de points",
+		"add": "Ajouter un point"
+	},
+	"marker": {
+		"header": "Point",
+		"coords": "Position",
+		"infos": "Informations"
+	},
+	"ui": {
+		"continue": "Continuer",
+		"validate": "Valider",
+		"logout": "Déconnexion",
+		"auto_logout": "Vous avez été déconnecté !",
+		"modify": "Modifier",
+		"cancel": "Annuler",
+		"save": "Enregistrer",
+		"show_more": "Afficher la suite",
+		"yes": "Oui",
+		"no": "Non",
+		"from": "de",
+		"to": "à",
+		"from_the": "du",
+		"to_the": "au",
+		"the": "le",
+		"at": "à",
+		"and": "et",
+		"or": "ou",
+		"hide": "Masquer",
+		"send": "Envoyer",
+		"book": "Je réserve",
+		"are_u_sure": "Êtes-vous sûr ?",
+		"required": "requis",
+		"browse_files": "Parcourir les fichiers",
+		"title": "intitulé",
+		"status": "statut"
+	}
 }

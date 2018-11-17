@@ -13,8 +13,8 @@
 				<i class="fa fa-info"></i> <span class="discret"> {{item.tooltip}}</span>
 			</div>
 			<div class="col item-controls">
-				<button class="button" @click="$emit('edit')"><i class="fa fa-pencil"></i></button>
-				<button class="button" @click="removeMarker(index)"><i class="fa fa-trash"></i></button>
+				<el-button class="button" @click="$emit('edit')"><i class="fa fa-pencil"></i></el-button>
+				<el-button class="button" @click="removeMarker(index)"><i class="fa fa-trash"></i></el-button>
 			</div>
 		</div>
 

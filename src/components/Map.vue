@@ -20,18 +20,20 @@
 
 			<l-control-scale :imperial="imperial" position="bottomleft"/>
 
-			<l-marker
-				v-for="marker, index in markers"
-				:key="marker.id"
-				:visible="marker.visible"
-				:draggable="marker.draggable"
-				:lat-lng="marker.position"
-				:icon="marker.icon"
-				@move="update($event, marker, index)" >
+			<template v-for="record in records">
+				<l-marker
+					v-for="marker, index in record.markers"
+					:key="marker.id"
+					:visible="marker.visible"
+					:draggable="marker.draggable"
+					:lat-lng="marker.position"
+					:icon="marker.icon"
+					@move="update($event, marker, index)" >
 
-				<l-popup v-if="marker.tooltip" :content="marker.tooltip" />
-				<l-tooltip v-if="marker.tooltip" :content="marker.tooltip" />
-			</l-marker>
+					<l-popup v-if="marker.tooltip" :content="marker.tooltip" />
+					<l-tooltip v-if="marker.tooltip" :content="marker.tooltip" />
+				</l-marker>
+			</template>
 
 		</l-map>
 	</div>
@@ -41,7 +43,6 @@
 import L from "leaflet";
 //import "mapbox.js/theme/style.css";
 import "leaflet/dist/leaflet.css";
-
 import "leaflet.icon.glyph";
 
 delete L.Icon.Default.prototype._getIconUrl;
@@ -83,7 +84,6 @@ const tileProviders = [
 ];
 
 import omnivore from "@mapbox/leaflet-omnivore";
-
 import datas from "!raw-loader!../assets/datasets/9.kml";
 
 export default {
@@ -116,7 +116,7 @@ export default {
 	},
 	props: {
 		bounds: L.latLngBounds({ lat: 46, lng: -8 }, { lat: 28, lng: 37 }),
-		markers: {
+		records: {
 			type: Array,
 			default() {
 				return [];
@@ -160,11 +160,10 @@ export default {
 		};
 
 		fetch("http://watchthemed.net/json/layer/9", params).then(response => {
-			console.log(response);
+			omnivore.kml(response).addTo(this.$refs.map.mapObject);
 		});
-		console.log(datas);
-		omnivore.kml.parse(datas).addTo(this.$refs.map.mapObject);
-		console.log(this);
+
+		//omnivore.kml.parse(datas).addTo(this.$refs.map.mapObject);
 	}
 };
 </script>

@@ -1,40 +1,34 @@
 <template>
-	<div class="sidebar">
+	<div>
 		<header class="block">
-			<h3>List of Markers</h3>
-			<button class="large button primary outline is-full-width" @click="addMarker">Ajouter un point</button>
+			<h1>{{record.title}}</h1>
+			<el-button class="button full-width" @click="addMarker" type="primary" plain>{{$t('markers.add')}}</el-button>
 		</header>
 
 		<main>
-			<template v-for="(item, index) in markers">
-				<item v-model="markers[index]" :index="index" :key="index" @edit="editMarker(markers[index])"/>		
+			<h3>{{$t('markers.title')}}</h3>
+			<template v-for="(item, index) in record.markers">
+				<item v-model="record.markers[index]" :index="index" :key="index" @edit="editMarker(record.markers[index])"/>		
 			</template>
 		</main>
-
 	</div>
 </template>
+
+
 <script>
-import Item from "./Sidebar-item.vue";
-
-// modals
 import { create } from "vue-modal-dialogs";
-
-import Confirm from "./modals/confirm";
-const confirm = create(Confirm, "title", "content");
-
-import Marker from "./modals/marker";
+import Marker from "../modals/marker";
 const markerModal = create(Marker, "marker");
 
+import item from "./item";
 export default {
-	components: { Item },
-	data() {
-		return {};
-	},
+	name: "Record-content",
+	components: {},
 	props: {
-		markers: {
-			type: Array,
+		record: {
+			type: Object,
 			default() {
-				return [];
+				return {};
 			}
 		}
 	},
@@ -64,16 +58,3 @@ export default {
 	}
 };
 </script>
- 
-<style lang="scss">
-.sidebar {
-	width: 800px;
-	height: 100%;
-	background: #fff;
-	z-index: 1;
-	overflow-y: auto;
-	flex: 0 0 100%;
-	max-width: 500px;
-	padding: 1.2em;
-}
-</style>

@@ -8,7 +8,7 @@
 		<main>
 			<h3>{{$t('markers.title')}}</h3>
 			<template v-for="(item, index) in record.markers">
-				<item v-model="record.markers[index]" :index="index" :key="index" @edit="editMarker(record.markers[index])"/>		
+				<item v-model="record.markers[index]" :index="index" :key="index" @edit="editMarker(record.markers[index])" @remove="removeMarker"/>		
 			</template>
 		</main>
 	</div>
@@ -19,14 +19,6 @@
 import { create } from "vue-modal-dialogs";
 import Marker from "../modals/marker";
 const markerModal = create(Marker, "marker");
-
-import L from "leaflet";
-
-const MarkerIcon = L.icon({
-	iconUrl: require("leaflet/dist/images/marker-icon.png"),
-	shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
-	iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png")
-});
 
 import item from "./item";
 export default {
@@ -47,8 +39,7 @@ export default {
 					position: { lat: "", lng: "" },
 					tooltip: "",
 					draggable: true,
-					visible: true,
-					icon: MarkerIcon
+					visible: true
 				};
 				markerModal(marker).then(result => {
 					if (result) {
@@ -66,6 +57,9 @@ export default {
 		},
 		editMarker(marker) {
 			markerModal(marker);
+		},
+		removeMarker(index) {
+			this.record.markers.splice(index, 1);
 		}
 	}
 };

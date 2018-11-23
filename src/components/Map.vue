@@ -27,7 +27,7 @@
 					:visible="marker.visible"
 					:draggable="marker.draggable"
 					:lat-lng="marker.position"
-					:icon="marker.icon"
+					:icon="markerIcon"
 					@move="update($event, marker, index)" >
 
 					<l-popup v-if="marker.tooltip" :content="marker.tooltip" />
@@ -45,14 +45,6 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet.icon.glyph";
 
-delete L.Icon.Default.prototype._getIconUrl;
-
-L.Icon.Default.mergeOptions({
-	iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-	iconUrl: require("leaflet/dist/images/marker-icon.png"),
-	shadowUrl: require("leaflet/dist/images/marker-shadow.png")
-});
-
 import {
 	LMap,
 	LTileLayer,
@@ -66,6 +58,19 @@ import {
 	LControlScale,
 	LControlLayers
 } from "vue2-leaflet";
+
+const MarkerIcon = L.icon({
+	iconUrl: require("leaflet/dist/images/marker-icon.png"),
+	shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
+	iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png")
+});
+// delete L.Icon.Default.prototype._getIconUrl;
+
+// L.Icon.Default.mergeOptions({
+// 	iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
+// 	iconUrl: require("leaflet/dist/images/marker-icon.png"),
+// 	shadowUrl: require("leaflet/dist/images/marker-shadow.png")
+// });
 
 const tileProviders = [
 	{
@@ -111,7 +116,8 @@ export default {
 			attributionPrefix: "Vue2Leaflet",
 			imperial: false,
 			Positions: ["topleft", "topright", "bottomleft", "bottomright"],
-			tileProviders: tileProviders
+			tileProviders: tileProviders,
+			markerIcon: MarkerIcon
 		};
 	},
 	props: {
@@ -148,7 +154,7 @@ export default {
 	methods: {
 		update(event, marker, index) {
 			marker.position = event.latlng;
-			this.$store.dispatch("updateMarker", { marker, index });
+			//this.$store.dispatch("updateMarker", { marker, index });
 		}
 	},
 	mounted() {

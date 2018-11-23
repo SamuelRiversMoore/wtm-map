@@ -60,7 +60,7 @@ export default {
 	},
 	methods: {
 		removeMarker(index) {
-			this.$store.dispatch("removeMarker", index);
+			this.$emit("remove", index);
 		},
 		parse(value, decimals) {
 			return Number(value).countDecimals() >= decimals ? Number(value).toFixedDown(decimals) : value;

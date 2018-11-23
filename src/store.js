@@ -7,19 +7,19 @@ export default new Vuex.Store({
 	state: {
 		center: { lat: 37.5, lng: 14.5 },
 		zoom: 5,
-		markers: [
-			{
-				id: "m1",
-				position: { lat: 33.906895, lng: 11.865234 },
-				tooltip: "tooltip for marker1",
-				draggable: true,
-				visible: true
-				// icon: L.icon.glyph({
-				// 	prefix: "",
-				// 	glyph: "A"
-				// })
-			}
-		],
+		// markers: [
+		// 	{
+		// 		id: "m1",
+		// 		position: { lat: 33.906895, lng: 11.865234 },
+		// 		tooltip: "tooltip for marker1",
+		// 		draggable: true,
+		// 		visible: true
+		// 		// icon: L.icon.glyph({
+		// 		// 	prefix: "",
+		// 		// 	glyph: "A"
+		// 		// })
+		// 	}
+		// ],
 		records: []
 	},
 	getters: {
@@ -32,18 +32,26 @@ export default new Vuex.Store({
 			state.records.push(new_record);
 			commit("set_records", state.records);
 		},
-		addMarker({ commit, state }, marker) {
-			state.markers.push(marker);
-			commit("set_markers", state.markers);
+		removeRecord({ commit, state }, index) {
+			state.records.splice(index, 1);
+			commit("set_records", state.records);
 		},
-		removeMarker({ commit, state }, index) {
-			state.markers.splice(index, 1);
-			commit("set_markers", state.markers);
-		},
-		updateMarker({ commit, state }, { marker, index }) {
-			state.markers[index] = marker;
-			//commit("set_markers", state.markers);
+		updateRecord({ commit, state }, { record, index }) {
+			state.records[index] = record;
+			commit("set_records", state.records);
 		}
+		// addMarker({ commit, state }, marker) {
+		// 	state.markers.push(marker);
+		// 	commit("set_markers", state.markers);
+		// },
+		// removeMarker({ commit, state }, index) {
+		// 	state.markers.splice(index, 1);
+		// 	commit("set_markers", state.markers);
+		// },
+		// updateMarker({ commit, state }, { marker, index }) {
+		// 	state.markers[index] = marker;
+		// 	//commit("set_markers", state.markers);
+		// }
 	},
 	mutations: {
 		init_store(state, dbName) {

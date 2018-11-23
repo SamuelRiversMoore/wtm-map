@@ -159,11 +159,11 @@ export default {
 			cache: "default"
 		};
 
-		fetch("http://watchthemed.net/json/layer/9", params).then(response => {
-			omnivore.kml(response).addTo(this.$refs.map.mapObject);
-		});
+		// fetch("http://watchthemed.net/json/layer/9", params).then(response => {
+		// 	omnivore.kml(response).addTo(this.$refs.map.mapObject);
+		// });
 
-		//omnivore.kml.parse(datas).addTo(this.$refs.map.mapObject);
+		omnivore.kml.parse(datas).addTo(this.$refs.map.mapObject);
 	}
 };
 </script>

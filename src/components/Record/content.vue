@@ -20,10 +20,18 @@ import { create } from "vue-modal-dialogs";
 import Marker from "../modals/marker";
 const markerModal = create(Marker, "marker");
 
+import L from "leaflet";
+
+const MarkerIcon = L.icon({
+	iconUrl: require("leaflet/dist/images/marker-icon.png"),
+	shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
+	iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png")
+});
+
 import item from "./item";
 export default {
 	name: "Record-content",
-	components: {},
+	components: { item },
 	props: {
 		record: {
 			type: Object,
@@ -39,11 +47,15 @@ export default {
 					position: { lat: "", lng: "" },
 					tooltip: "",
 					draggable: true,
-					visible: true
+					visible: true,
+					icon: MarkerIcon
 				};
 				markerModal(marker).then(result => {
 					if (result) {
-						this.$store.dispatch("addMarker", result);
+						if (!this.record.markers) this.$set(this.record, "markers", []);
+						console.log(this.record.markers);
+						this.record.markers.push(result);
+						// this.$store.dispatch("addMarker", result);
 						this.$store.commit("set_center", result.position);
 					}
 				});

@@ -1,8 +1,10 @@
 <template>
 	<el-tabs type="border-card">
-	  <el-tab-pane v-for="record in records" :label="record.title">
-			<record-content :record="record"/>
-	  </el-tab-pane>
+		<template v-for="record in records">
+			<el-tab-pane :label="record.title">
+				<record-content :record="record"/>
+			</el-tab-pane>
+		</template>
 	</el-tabs>
 </template>
 

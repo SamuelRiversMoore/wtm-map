@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Records from "./views/Records.vue";
-import Record from "./views/Record.vue";
+import Layers from "./views/Layers.vue";
+import Layer from "./views/Layer.vue";
 
 Vue.use(Router);
 
@@ -11,13 +11,14 @@ export default new Router({
 	routes: [
 		{
 			path: "/",
-			name: "records",
-			component: Records
+			name: "layers",
+			component: Layers
 		},
 		{
 			path: "/:id",
-			name: "record",
-			component: Record
+			name: "layer",
+			component: Layer,
+			props: true
 		},
 		{
 			path: "/about",

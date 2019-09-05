@@ -20,19 +20,22 @@
 
 			<l-control-scale :imperial="imperial" position="bottomleft"/>
 
-			<template v-for="record in records">
-				<l-marker
-					v-for="marker, index in record.markers"
-					:key="marker.id"
-					:visible="marker.visible"
-					:draggable="marker.draggable"
-					:lat-lng="marker.position"
-					:icon="markerIcon"
-					@move="update($event, marker, index)" >
+			<template v-for="layer in layers">
+				<l-layer-group :visible="layer.visible" >
+					<l-marker
+						v-for="marker, index in layer.markers"
+						:key="marker.id"
+						:visible="marker.visible"
+						:opacity="marker.opacity"
+						:draggable="marker.draggable"
+						:lat-lng="marker.position"
+						:icon="markerIcon"
+						@move="update($event, marker)" >
 
-					<l-popup v-if="marker.tooltip" :content="marker.tooltip" />
-					<l-tooltip v-if="marker.tooltip" :content="marker.tooltip" />
-				</l-marker>
+						<l-popup v-if="marker.tooltip" :content="marker.tooltip" />
+						<l-tooltip v-if="marker.tooltip" :content="marker.tooltip" />
+					</l-marker>
+				</l-layer-group>
 			</template>
 
 		</l-map>
@@ -40,6 +43,22 @@
 </template>
 
 <script>
+const tileProviders = [
+	{
+		name: "OpenStreetMap",
+		visible: true,
+		attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+		url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+	},
+	{
+		name: "OpenTopoMap",
+		visible: false,
+		url: "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+		attribution:
+			'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+	}
+];
+
 import L from "leaflet";
 //import "mapbox.js/theme/style.css";
 import "leaflet/dist/leaflet.css";
@@ -62,34 +81,17 @@ import {
 const MarkerIcon = L.icon({
 	iconUrl: require("leaflet/dist/images/marker-icon.png"),
 	shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
-	iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png")
+	iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
+	iconAnchor: [12.5, 40],
+	shadowAnchor: [12.5, 40]
+	//className: "olé"
 });
-// delete L.Icon.Default.prototype._getIconUrl;
-
-// L.Icon.Default.mergeOptions({
-// 	iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-// 	iconUrl: require("leaflet/dist/images/marker-icon.png"),
-// 	shadowUrl: require("leaflet/dist/images/marker-shadow.png")
-// });
-
-const tileProviders = [
-	{
-		name: "OpenStreetMap",
-		visible: true,
-		attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-		url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-	},
-	{
-		name: "OpenTopoMap",
-		visible: false,
-		url: "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
-		attribution:
-			'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-	}
-];
 
 import omnivore from "@mapbox/leaflet-omnivore";
 import datas from "!raw-loader!../assets/datasets/9.kml";
+
+import "leaflet.polylinemeasure";
+import measureOptions from "./measureOptions.js";
 
 export default {
 	name: "Map",
@@ -108,6 +110,7 @@ export default {
 	},
 	data() {
 		return {
+			map: null,
 			mapOptions: { zoomControl: false, attributionControl: false },
 			minZoom: 1,
 			maxZoom: 20,
@@ -122,7 +125,7 @@ export default {
 	},
 	props: {
 		bounds: L.latLngBounds({ lat: 46, lng: -8 }, { lat: 28, lng: 37 }),
-		records: {
+		layers: {
 			type: Array,
 			default() {
 				return [];
@@ -152,9 +155,8 @@ export default {
 		}
 	},
 	methods: {
-		update(event, marker, index) {
-			marker.position = event.latlng;
-			//this.$store.dispatch("updateMarker", { marker, index });
+		update(event, marker) {
+			this.$set(marker, "position", event.latlng);
 		}
 	},
 	mounted() {
@@ -168,8 +170,11 @@ export default {
 		// fetch("http://watchthemed.net/json/layer/9", params).then(response => {
 		// 	omnivore.kml(response).addTo(this.$refs.map.mapObject);
 		// });
-
-		omnivore.kml.parse(datas).addTo(this.$refs.map.mapObject);
+		this.$nextTick(() => {
+			this.map = this.$refs.map.mapObject; // work as expected
+			omnivore.kml.parse(datas).addTo(this.map);
+			//L.control.polylineMeasure(measureOptions).addTo(this.map);
+		});
 	}
 };
 </script>

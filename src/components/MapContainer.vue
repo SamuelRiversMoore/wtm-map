@@ -1,5 +1,5 @@
 <template>
-	<LeafletMap id="leaflet-map-main" :token="mapbox_token" :records="records" />
+	<LeafletMap id="leaflet-map-main" :token="mapbox_token" :layers="layers" />
 </template>
 
 <script>
@@ -14,13 +14,21 @@ export default {
 		};
 	},
 	computed: {
-		records: {
+		layers: {
 			get() {
-				return this.$store.state.records;
+				return this.$store.state.layers;
 			},
 			set(value) {
-				this.$store.commit("set_markers", value);
+				this.$store.commit("set_layers", value);
 			}
+		}
+	},
+	watch: {
+		layers: {
+			handler(value) {
+				this.$store.commit("set_layers", value);
+			},
+			deep: true
 		}
 	},
 	mounted() {

@@ -3,24 +3,11 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
 	state: {
 		center: { lat: 37.5, lng: 14.5 },
 		zoom: 5,
-		// markers: [
-		// 	{
-		// 		id: "m1",
-		// 		position: { lat: 33.906895, lng: 11.865234 },
-		// 		tooltip: "tooltip for marker1",
-		// 		draggable: true,
-		// 		visible: true
-		// 		// icon: L.icon.glyph({
-		// 		// 	prefix: "",
-		// 		// 	glyph: "A"
-		// 		// })
-		// 	}
-		// ],
-		records: []
+		layers: []
 	},
 	getters: {
 		getCenterAsArray: state => {
@@ -28,30 +15,24 @@ export default new Vuex.Store({
 		}
 	},
 	actions: {
-		addRecord({ commit, state }, new_record) {
-			state.records.push(new_record);
-			commit("set_records", state.records);
+		addLayer({ commit, state }, new_layer) {
+			state.layers.push(new_layer);
+			commit("set_layers", state.layers);
 		},
-		removeRecord({ commit, state }, index) {
-			state.records.splice(index, 1);
-			commit("set_records", state.records);
+		removeLayer({ commit, state }, index) {
+			state.layers.splice(index, 1);
+			commit("set_layers", state.layers);
 		},
-		updateRecord({ commit, state }, { record, index }) {
-			state.records[index] = record;
-			commit("set_records", state.records);
+		updateLayer({ commit, state }, { layer, index }) {
+			state.layers[index] = layer;
+			//commit("set_layers", state.layers);
+		},
+		showLayers({ commit, state }, ids = null) {
+			state.layers.forEach(layer => {
+				layer.visible = ids ? ids.includes(layer.id) : true;
+			});
+			//commit("set_layers", state.layers);
 		}
-		// addMarker({ commit, state }, marker) {
-		// 	state.markers.push(marker);
-		// 	commit("set_markers", state.markers);
-		// },
-		// removeMarker({ commit, state }, index) {
-		// 	state.markers.splice(index, 1);
-		// 	commit("set_markers", state.markers);
-		// },
-		// updateMarker({ commit, state }, { marker, index }) {
-		// 	state.markers[index] = marker;
-		// 	//commit("set_markers", state.markers);
-		// }
 	},
 	mutations: {
 		init_store(state, dbName) {
@@ -61,17 +42,29 @@ export default new Vuex.Store({
 				}
 			}
 		},
-		set_records(state, payload) {
-			state.records = payload;
-		},
-		set_markers(state, payload) {
-			state.markers = payload;
+		set_layers(state, payload) {
+			state.layers = payload;
 		},
 		set_center(state, payload) {
 			state.center = payload;
 		},
 		set_zoom(state, payload) {
 			state.zoom = payload;
+		},
+		reset_store(state) {
+			state = {
+				center: { lat: 37.5, lng: 14.5 },
+				zoom: 5,
+				layers: []
+			};
 		}
 	}
 });
+
+export default store;
+
+const initialStateCopy = JSON.parse(JSON.stringify(store.state));
+
+export function resetState() {
+	store.replaceState(JSON.parse(JSON.stringify(initialStateCopy)));
+}

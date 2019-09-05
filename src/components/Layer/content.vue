@@ -1,14 +1,13 @@
 <template>
 	<div>
 		<header class="block">
-			<h1>{{record.title}}</h1>
+			<h1>{{layer.title}}</h1>
 			<el-button class="button full-width" @click="addMarker" type="primary" plain>{{$t('markers.add')}}</el-button>
 		</header>
 
 		<main>
-			<h3>{{$t('markers.title')}}</h3>
-			<template v-for="(item, index) in record.markers">
-				<item v-model="record.markers[index]" :index="index" :key="index" @edit="editMarker(record.markers[index])" @remove="removeMarker"/>		
+			<template v-for="(item, index) in layer.markers">
+				<item v-model="layer.markers[index]" :index="index" :key="index" @edit="editMarker(layer.markers[index])" @remove="removeMarker"/>		
 			</template>
 		</main>
 	</div>
@@ -17,15 +16,15 @@
 
 <script>
 import { create } from "vue-modal-dialogs";
-import Marker from "../modals/marker";
+import Marker from "../modals/marker-edit";
 const markerModal = create(Marker, "marker");
 
 import item from "./item";
 export default {
-	name: "Record-content",
+	name: "Layer-content",
 	components: { item },
 	props: {
-		record: {
+		layer: {
 			type: Object,
 			default() {
 				return {};
@@ -43,9 +42,9 @@ export default {
 				};
 				markerModal(marker).then(result => {
 					if (result) {
-						if (!this.record.markers) this.$set(this.record, "markers", []);
-						console.log(this.record.markers);
-						this.record.markers.push(result);
+						if (!this.layer.markers) this.$set(this.layer, "markers", []);
+						console.log(this.layer.markers);
+						this.layer.markers.push(result);
 						// this.$store.dispatch("addMarker", result);
 						this.$store.commit("set_center", result.position);
 					}
@@ -59,7 +58,7 @@ export default {
 			markerModal(marker);
 		},
 		removeMarker(index) {
-			this.record.markers.splice(index, 1);
+			this.layer.markers.splice(index, 1);
 		}
 	}
 };

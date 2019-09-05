@@ -1,9 +1,9 @@
 {
-	"records": {
+	"layers": {
 		"title": "Cas ouverts",
 		"add": "Ouvrir un nouveau cas"
 	},
-	"record": {
+	"layer": {
 		"header": "Nouveau cas",
 		"title": "Intitulé du cas"
 	},
@@ -12,6 +12,7 @@
 		"add": "Ajouter un point"
 	},
 	"marker": {
+		"label": "point | points",
 		"header": "Point",
 		"coords": "Position",
 		"infos": "Informations"
@@ -42,6 +43,7 @@
 		"required": "requis",
 		"browse_files": "Parcourir les fichiers",
 		"title": "intitulé",
-		"status": "statut"
+		"status": "statut",
+		"back": "Retour"
 	}
 }

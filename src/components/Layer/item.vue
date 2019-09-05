@@ -1,27 +1,27 @@
 <template>
-	<div class="item">
+	<el-card shadow="never" class="row">
 		<div class="row">
-			<strong class="col-1"><span>{{ index + 1 }}.</span></strong>
-			<span class="col position">
-				<i class="fa fa-map-marker"></i> {{position}}
-			</span>	
+			<div class="col position">
+				<div class="row"><i class="fa fa-map-marker"></i> {{position}}</div>
+				<div class="discret">{{position_alt}}</div>
+			</div>	
 		</div>
 
 		<div class="row">
 			<span class="col-1"></span>
-			<div class="col">
-				<i class="fa fa-info"></i> <span class="discret"> {{item.tooltip}}</span>
+			<div class="col" v-if="item.tooltip">
+				<span class="discret"> {{item.tooltip}}</span>
 			</div>
 			<div class="col item-controls">
 				<el-button class="button" @click="$emit('edit')"><i class="fa fa-pencil"></i></el-button>
 				<el-button class="button" @click="removeMarker(index)"><i class="fa fa-trash"></i></el-button>
 			</div>
 		</div>
-
-	</div>
+	</el-card>
 </template>
 <script>
 const Coordinates = require("coordinate-parser");
+var formatcoords = require("formatcoords");
 
 Number.prototype.countDecimals = function() {
 	if (Math.floor(this.valueOf()) === this.valueOf()) return 0;
@@ -56,6 +56,9 @@ export default {
 				let coords = new Coordinates(value);
 				this.$set(this.item, "position", { lat: this.parse(coords.latitude, 6), lng: this.parse(coords.longitude, 6) });
 			}
+		},
+		position_alt() {
+			return formatcoords(this.position).format("DD MM ss X", { latLonSeparator: ", ", decimalPlaces: 0 });
 		}
 	},
 	methods: {
@@ -72,5 +75,8 @@ export default {
 <style lang="scss">
 .item {
 	padding: 0.5em;
+}
+.position i.fa {
+	margin-right: 0.5em;
 }
 </style>

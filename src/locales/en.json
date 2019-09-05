@@ -1,9 +1,9 @@
 {
-	"records": {
+	"layers": {
 		"title": "Open cases",
 		"add": "Open a new case"
 	},
-	"record": {
+	"layer": {
 		"header": "New case",
 		"title": "Title of the case"
 	},
@@ -12,6 +12,7 @@
 		"add": "Add a point on the map"
 	},
 	"marker": {
+		"label": "point | points",
 		"header": "Marker",
 		"coords": "Position",
 		"infos": "Informations"
@@ -42,6 +43,7 @@
 		"required": "required",
 		"browse_files": "Browse files",
 		"title": "title",
-		"status": "status"
+		"status": "status",
+		"back": "Back"
 	}
 }

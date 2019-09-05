@@ -1,10 +1,10 @@
 <template>
 	<div class="message-box dialog-mask">
 		<div class="dialog-content card">
-			<header><h2>{{$t('record.header')}}</h2></header>
+			<header><h2>{{$t('layer.header')}}</h2></header>
 			<div class="block">
 				<el-form label-position="top" :model="item" @submit.native.prevent="validate">
-					<el-form-item :label="$t('record.title')">
+					<el-form-item :label="$t('layer.title')">
 						<el-input v-model="item.title" name="title"></el-input>
 					</el-form-item>
 				</el-form>
@@ -18,6 +18,7 @@
 </template>
 
 <script>
+var slugify = require("slugify");
 export default {
 	data() {
 		return {
@@ -29,8 +30,9 @@ export default {
 	methods: {
 		validate() {
 			try {
-				this.$set(this.record, "title", this.item.title);
-				this.$close(this.record);
+				this.$set(this.layer, "title", this.item.title);
+				this.$set(this.layer, "id", slugify(this.item.title));
+				this.$close(this.layer);
 			} catch (e) {
 				this.hasError = true;
 				console.error(e);

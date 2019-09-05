@@ -1,5 +1,6 @@
 $fa-font-path: "~fork-awesome/fonts";
 @import "~fork-awesome/scss/fork-awesome.scss";
+@import "~leaflet.polylinemeasure/Leaflet.PolylineMeasure.css";
 
 //@import "~chota/dist/chota.css";
 
@@ -28,6 +29,12 @@ button {
     }
     + button {
         margin-left: 1.2em;
+    }
+}
+button.el-button {
+    padding: 0.8em 1em;
+    &.neutral {
+        border: none;
     }
 }
 
